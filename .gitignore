@@ -1,0 +1,8 @@
+.env
+.vscode
+bin
+obj
+.vs
+.trae
+node_modules
+__pycache__
