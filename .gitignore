@@ -6,3 +6,4 @@ obj
 .trae
 node_modules
 __pycache__
+cache
