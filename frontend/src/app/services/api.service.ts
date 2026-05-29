@@ -5,7 +5,7 @@ import { Album, Photo, SystemStats, SystemLog } from '../models/album.model';
 
 @Injectable({ providedIn: 'root' })
 export class ApiService {
-  private baseUrl = 'http://localhost:3000/api';
+  private baseUrl = 'http://localhost:3001/api';
 
   constructor(private http: HttpClient) {}
 

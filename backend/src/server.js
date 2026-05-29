@@ -8,7 +8,7 @@ const photosRouter = require('./routes/photos');
 const adminRouter = require('./routes/admin');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000,
@@ -36,4 +36,5 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Photo Album Server running on port ${PORT}`);
   console.log(`API Base URL: http://localhost:${PORT}/api`);
+  console.log(`Health check: http://localhost:${PORT}/api/health`);
 });
